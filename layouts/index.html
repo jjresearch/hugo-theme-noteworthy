@@ -5,60 +5,10 @@
             <p>{{ .Site.Params.Description | markdownify }}</p>
         </div>
         {{ end }}
-        <b>Why compositionality?</b>
-        <br>
-        <p>Natural phenomenon are complex. On the surface, the task of understanding such complex natural phemonenon seems impossible. The miracle is that the natural world
-        is <i>structured</i>. One of the general properties of structure is that it tends to be <i>compositional</i>. Compositionality is what allows complex
-        structures to be coherent and therefore learnable.</p>
-        <b>Why interdisciplinary?</b>
-        <br>
-        <p>No one scientific domain owns the concept of compositionality. Each domain has its own seemingly different utilization of compositionality.</p>
-        <p>Through the lens of interdisciplinary research, we can understand compositionality. When we see compositionality in natural language processing, vision, 
-        structural biology, material science and graphic design, we see a more complete (or less-dogmatic) picture. We can begin to really see compositionality.</p>
-        <div align="center">
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/JS-_dDJIZd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <b>Why geometry?</b>
-        <br>
-        <p>Consider the space of compositional structures. (<i>How does one even parameterize such a space?!</i>) My hunch (conjecture, intuition) is that this space itself has a
-          structure, and that structure is expressed through <i>geometry</i>.</p>
-        <p>Geometry is where the technical meets the abstract.</p>
-
-
-    </div>
-
-        <!-- Custom paginator -->
-        <!-- <div class="paginator">
-        {{ $paginator := .Paginator }}
-        {{ if gt .Paginator.TotalPages 1 }}
-        <p>Page {{ $paginator.PageNumber}} of {{ $paginator.TotalPages }}</p>
-        <div class="paginator-group">
-            {{ if $paginator.HasPrev }}
-            <a class="color-link" href="{{ $paginator.Prev.URL | relLangURL }}">
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                            <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
-                            <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
-                        </g>
-                </svg>
-                Newer
-            </a>
-            {{ end }}
-            {{ if $paginator.HasNext }}
-                <a class="color-link older" href="{{ $paginator.Next.URL | relLangURL }}">
-                    Older
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                            <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                                <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>
-                                <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
-                            </g>
-                    </svg>
-
-                </a>
-            {{ end }}
+        {{ if isset .Site.Params "body" }}
+        <div class="body">
+            <p>{{ .Site.Params.Body | markdownify }}</p>
         </div>
         {{ end }}
-    </div> -->
-
-
+</div>
 {{ end }}
