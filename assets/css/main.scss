@@ -1,8 +1,8 @@
 /* VARIABLES ========================================================================== */
 
 // COLORS
-$teal: #63BDA2;
-$teal-darker: #359377;
+$black: 	#000000;
+$black-darker: #000000;
 $gray-background: #F7F7F7;
 $gray-table-border: #EEEEEE;
 $gray-lightest: #D2D2D2;
@@ -136,20 +136,20 @@ a:visited {
 
 .color-link {
     text-decoration: none;
-    color: $teal;
+    color: $black;
     font-family: $sans-serif;
     margin-right: 1.5em;
 }
 
 .color-link:visited {
-    color: $teal;
+    color: $black;
 }
 
 .color-link:hover {
-    color: $teal-darker;
+    color: $black-darker;
 
     .color-arrow {
-        fill: $teal-darker;
+        fill: $black-darker;
     }
 }
 
@@ -315,7 +315,7 @@ nav {
 
     a {
         text-decoration: none;
-        color: $teal;
+        color: $black;
         font-size: 0.95rem;
     }
 }
@@ -362,7 +362,7 @@ nav {
 // SHORTCODE CONTENT
 .twitter-tweet {
     font-family: $sans-serif !important;
-    border-left: 4px solid $teal !important;
+    border-left: 4px solid $black !important;
     color: $gray-dark !important;
     font-size: 1rem !important;
     font-style: italic !important;
